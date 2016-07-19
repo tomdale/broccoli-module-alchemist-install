@@ -1,10 +1,10 @@
 {
   "name": "broccoli-module-alchemist-install",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Post-install script for registering correct package.json main for broccoli-module-alchemist projects",
   "main": "index.js",
   "bin": {
-    "broccoli-module-alchemist-install": "bin/broccoli-module-alchemist-install"
+    "broccoli-module-alchemist-install": "bin/broccoli-module-alchemist-install.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
