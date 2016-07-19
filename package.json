@@ -1,0 +1,25 @@
+{
+  "name": "broccoli-module-alchemist-install",
+  "version": "0.1.0",
+  "description": "Post-install script for registering correct package.json main for broccoli-module-alchemist projects",
+  "main": "index.js",
+  "bin": {
+    "broccoli-module-alchemist-install": "bin/broccoli-module-alchemist-install"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monegraph/broccoli-module-alchemist-install.git"
+  },
+  "keywords": [
+    "broccoli"
+  ],
+  "author": "Tom Dale <tom@tomdale.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monegraph/broccoli-module-alchemist-install/issues"
+  },
+  "homepage": "https://github.com/monegraph/broccoli-module-alchemist-install#readme"
+}
