@@ -32,6 +32,6 @@ try {
     pkg.main = cjsMain;
     fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n');
   } catch (f) {
-    console.log('Could not load ' + main ' or ' + cjsMain);
+    console.log('Could not load ' + main + ' or ' + cjsMain);
   }
 }
