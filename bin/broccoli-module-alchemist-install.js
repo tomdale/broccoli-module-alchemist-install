@@ -13,8 +13,11 @@ if (!main) {
 }
 
 try {
+  console.log('Verifying compatibility of ' + main);
   require(path.join(cwd(), main));
-} catch(e) {
+  console.log('Compatibility verified, using ' + main);
+} catch (e) {
+  console.log('Exception caught while evaluating ' + main);
   // Remove leading 'src' directory.
   // src/system/server.js -> system/server.js
   var mainPath = main.split(path.sep).slice(1).join(path.sep);
@@ -22,14 +25,13 @@ try {
   var cjsMain = path.join('dist', 'cjs', mainPath);
 
   try {
-    console.log('requiring ' + cjsMain);
+    console.log('Verifying compatibility of ' + cjsMain);
     require(path.join(cwd, cjsMain));
     console.log('Switching package main to ' + cjsMain);
 
     pkg.main = cjsMain;
     fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n');
   } catch (f) {
-    console.log(f);
-    console.log('Unable to find functioning main');
+    console.log('Could not load ' + main ' or ' + cjsMain);
   }
 }
