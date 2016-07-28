@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/monegraph/broccoli-module-alchemist-install/issues"
   },
-  "homepage": "https://github.com/monegraph/broccoli-module-alchemist-install#readme"
+  "homepage": "https://github.com/monegraph/broccoli-module-alchemist-install#readme",
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
 }
