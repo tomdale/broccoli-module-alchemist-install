@@ -28,6 +28,7 @@ try {
 
   try {
     console.log('Verifying compatibility of ' + cjsMain);
+    console.log('Requiring ' + path.join(cwd, cjsMain));
     require(path.join(cwd, cjsMain));
     console.log('Switching package main to ' + cjsMain);
 
