@@ -14,7 +14,7 @@ if (!main) {
 
 try {
   console.log('Verifying compatibility of ' + main);
-  require(path.join(cwd(), main));
+  require(path.join(cwd, main));
   console.log('Compatibility verified, using ' + main);
 } catch (e) {
   console.log('Exception caught while evaluating ' + main);
